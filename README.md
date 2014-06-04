@@ -23,6 +23,7 @@ terminal-a$ sudo mrt
 ````
 
 ####  Running the Tests  
+````sh
 # and then, in the same way that we run 'meteor mongo' in a separate terminal
 # while our application is already running,
 # we want to open up a new terminal, and run
