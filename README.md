@@ -26,7 +26,8 @@ terminal-a$ sudo mrt
 ````sh
 # and then, in the same way that we run 'meteor mongo' in a separate terminal
 # while our application is already running,
-# we want to open up a new terminal, and run
+# we want to open up a new terminal, and run nightwatch
+terminal-b$ cd /private
 terminal-b$ sudo ./run_nightwatch.sh
 
 # if you want to rerun the acceptance tests, go back to the first terminal
