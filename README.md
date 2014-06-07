@@ -1,7 +1,7 @@
 selenium-nightwatch
 ===================
 
-Dead-simple integration of Selenium with Meteor, via the Nightwatch framework.
+Dead-easy acceptance testing for your Meteor app with Selenium and Nightwatch.
 
 
 ####  Requirements  
@@ -9,14 +9,29 @@ Dead-simple integration of Selenium with Meteor, via the Nightwatch framework.
   - Meteor
   - Firefox
 
+####  Size Warning!
+This package is 11mb large, because of the Selenium browser automation server; and will increase the overall size of your application by 11mb!  The good news, however, is that this 11mb won't be shipped down to the client, and is simply bloats the bundle file and adds an unnecessary file to the server.  We're working on providing this in a way that reduces that overhead as well.
+
+
 ####  Installation  
 
 ````sh
 # Go to the root of your application
-terminal-a$ cd myappdir
+terminal-a$  cd myappdir
 
-# Then clone the selenium-nightwatch repository as the /private directory of your app
-terminal-a$ git clone https://github.com/awatson1978/leaderboard-nightwatch.git private
+# Option A:  Install via Atmosphere
+terminal-a$  mrt add selenium-nightwatch
+
+# Option B:  Install with Git Clone
+terminal-a$  git clone https://github.com/awatson1978/leaderboard-nightwatch.git /private
+````
+
+
+####  Run Your App
+
+````sh
+# Go to the root of your application
+terminal-a$ cd myappdir
 
 # run the leaderboard application
 terminal-a$ sudo mrt
@@ -29,13 +44,19 @@ terminal-a$ sudo mrt
 # we want to open up a new terminal, and run nightwatch
 terminal-b$ cd /private
 terminal-b$ sudo ./run_nightwatch.sh
+````
 
+####  Additional Runs
+````
 # if you want to rerun the acceptance tests, go back to the first terminal
 # and be sure to reset the database
 terminal-a$ ctrl-a
 terminal-a$ sudo mrt reset
 terminal-a$ sudo mrt
+````
 
+####  Configuring a Shared Testing Database
+````
 # with bigger test suites, you'll maybe want to inject values into the database
 # and launch your application against a test database
 terminal-a$ MONGO_URL=mongodb://127.0.0.1:27017 PORT=3000 node .meteor/local/build/main.js
@@ -55,49 +76,49 @@ For more information on syntax you can use, check out the [Nightwatch API](http:
     .waitForElementVisible('div#outer', 1000)
     .waitForElementVisible('div.leaderboard', 1000)
     .waitForElementVisible('.leaderboard .player', 1000)
-  
+
     .verify.containsText('div.leaderboard div:nth-child(1) .name', 'Ada Lovelace')
     .verify.containsText('div.leaderboard div:nth-child(1) .score', '50')
-  
+
     .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Grace Hopper')
     .verify.containsText('div.leaderboard div:nth-child(2) .score', '40')
-  
+
     .verify.containsText('div.leaderboard div:nth-child(3) .name', 'Claude Shannon')
     .verify.containsText('div.leaderboard div:nth-child(3) .score', '35')
-  
+
     .verify.containsText('div.leaderboard div:nth-child(4) .name', 'Nikola Tesla')
     .verify.containsText('div.leaderboard div:nth-child(4) .score', '25')
-  
+
     .verify.containsText('div.leaderboard div:nth-child(5) .name', 'Marie Curie')
     .verify.containsText('div.leaderboard div:nth-child(5) .score', '20')
-  
+
     .verify.containsText('div.leaderboard div:nth-child(6) .name', 'Carl Friedrich Gauss')
     .verify.containsText('div.leaderboard div:nth-child(6) .score', '5')
-  
-  
+
+
     .verify.containsText('.none', 'Click a player to select')
     .click('div.leaderboard div:nth-child(2)')
     .pause(500)
     .waitForElementVisible('input.inc', 1000)
     .verify.attributeEquals('input.inc', 'value', 'Give 5 points')
-  
+
     .click('input.inc')
     .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Grace Hopper')
     .verify.containsText('div.leaderboard div:nth-child(2) .score', '45')
-  
+
     .click('input.inc')
     .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Grace Hopper')
     .verify.containsText('div.leaderboard div:nth-child(2) .score', '50')
-  
+
     .click('input.inc')
     .verify.containsText('div.leaderboard div:nth-child(1) .name', 'Grace Hopper')
     .verify.containsText('div.leaderboard div:nth-child(1) .score', '55')
-  
+
     .verify.containsText('div.leaderboard div:nth-child(2) .name', 'Ada Lovelace')
     .verify.containsText('div.leaderboard div:nth-child(2) .score', '50')
-  
+
     //.setValue('input[type=text]', 'nightwatch')
-  
+
     .end();
 ````
 
@@ -114,16 +135,3 @@ Licensing
 ------------------------
 
 MIT License. Use as you wish, including for commercial purposes.
-
-
-
-
-
-
-
-
-
-
-
-
-
