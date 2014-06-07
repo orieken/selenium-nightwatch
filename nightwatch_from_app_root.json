@@ -7,7 +7,7 @@
 
   "selenium" : {
     "start_process" : true,
-    "server_path" : "packages/selnium-nightwatch/selenium/selenium-server-standalone-2.42.0.jar",
+    "server_path" : "packages/selenium-nightwatch/selenium/selenium-server-standalone-2.42.0.jar",
     "log_path" : "packages/selenium-nightwatch/logs",
     "host" : "127.0.0.1",
     "port" : 4444,
