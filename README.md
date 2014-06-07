@@ -42,17 +42,31 @@ terminal-a$ sudo mrt
 # and then, in the same way that we run 'meteor mongo' in a separate terminal
 # while our application is already running,
 # we want to open up a new terminal, and run nightwatch
-terminal-b$ cd /private
+terminal-b$ cd packages/selenium-nightwatch
+terminal-b$ sudo ./launch_nightwatch_from_package.sh
+````
+
+####  Running Tests from App Root
+````sh
+# and then, in the same way that we run 'meteor mongo' in a separate terminal
+# while our application is already running,
+# we want to open up a new terminal, and run nightwatch
+terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
 terminal-b$ sudo ./run_nightwatch.sh
 ````
 
-####  Additional Runs
+#### Resetting the Database For New Runs
 ````
 # if you want to rerun the acceptance tests, go back to the first terminal
 # and be sure to reset the database
 terminal-a$ ctrl-a
 terminal-a$ sudo mrt reset
 terminal-a$ sudo mrt
+
+# or write your tests so they don't destructively modify your database
+# or write tearUp and tearDown methods for your tests to prep the database
+# or set up a test database
+# or whatever else you need to do to manage your database settings
 ````
 
 ####  Configuring a Shared Testing Database
