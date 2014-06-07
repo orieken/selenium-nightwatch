@@ -77,10 +77,34 @@ terminal-a$ MONGO_URL=mongodb://127.0.0.1:27017 PORT=3000 node .meteor/local/bui
 ````
 
 
-####  Writing Acceptance Tests
+#### Write Your First Acceptance Tests
 Check out this dead-simple syntax for writing acceptance tests, and testing your Meteor app's user interface.  All you need to do is add files to the ``/tests`` directory, and follow this syntax.  
 
-For more information on syntax you can use, check out the [Nightwatch API](http://nightwatchjs.org/api#assert-attributeEquals);
+````js
+// tests/google.js
+
+module.exports = {
+  "Demo test Google" : function (client) {
+    client
+      .url("http://www.google.com")
+      .waitForElementVisible("body", 1000)
+      .assert.title("Google")
+      .assert.visible("input[type=text]")
+      .setValue("input[type=text]", "nightwatch")
+      .waitForElementVisible("button[name=btnG]", 1000)
+      .click("button[name=btnG]")
+      .pause(1000)
+      .assert.containsText("#main", "The Night Watch")
+      .end();
+  }
+};
+````
+
+
+
+####  Writing More Complicated Acceptance Tests
+
+Once you have your first test running green, check out the [Nightwatch API](http://nightwatchjs.org/api#assert-attributeEquals), and start creating more advanced tests, like this leaderboard test:
 ````js
 // tests/leaderboard.js
 
@@ -135,14 +159,6 @@ For more information on syntax you can use, check out the [Nightwatch API](http:
 
     .end();
 ````
-
-####  Notes  
-
-First, check out the ``/private`` directory, where all nightwatch configuration files are located, and where selenium server is installed.  
-
-Second, check out the ``run_nightwatch.sh``, and how we're piggy-backing on Meteor's default bundling in the ``.meteor/local/build`` directory.  
-
-Third, check out the ``/private/nightwatch-output`` directory, where you can grab XML versions of the test results.
 
 
 Licensing
