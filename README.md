@@ -91,6 +91,9 @@ terminal-b$ sudo ./launch_nightwatch_from_package.sh
 # we want to open up a new terminal, and run nightwatch
 terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
 terminal-b$ sudo ./run_nightwatch.sh
+
+# you might want to do something clever like pass in arguments and run specific tests
+terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
 ````
 
 
