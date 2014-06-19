@@ -7,9 +7,9 @@
     return;
   }
 
-  var ANNOUNCE_STRING = 'Velocity Jasmine-Unit is loaded',
+  var ANNOUNCE_STRING = 'Velocity Nightwatch-Selenium is loaded',
       pwd = process.env.PWD,
-      DEBUG = process.env.JASMINE_DEBUG,
+      DEBUG = process.env.NIGHTWATCH_DEBUG,
       spawn = Npm.require('child_process').spawn,
       parseString = Npm.require('xml2js').parseString,
       glob = Npm.require('glob'),
@@ -17,6 +17,7 @@
       path = Npm.require('path'),
       _ = Npm.require('lodash'),
       rimraf = Npm.require('rimraf'),
+      //testReportsPath = path.join(pwd, 'tests', '.reports', 'jasmine-unit'),
       testReportsPath = path.join(pwd, 'tests', '.reports', 'jasmine-unit'),
       args = [],
       consoleData = '',
@@ -25,23 +26,26 @@
 
 
 // build OS-independent path to jasmine cli
-  jasmineCli = pwd + ',packages,jasmine-unit,.npm,package,node_modules,jasmine-node,lib,jasmine-node,cli.js'.split(',').join(path.sep);
+  //jasmineCli = pwd + ',packages,jasmine-unit,.npm,package,node_modules,jasmine-node,lib,jasmine-node,cli.js'.split(',').join(path.sep);
+  nightwatchCli = pwd + '/run_nightwatch.sh';
 
-  args.push(jasmineCli);
-  args.push('--coffee');
-  args.push('--color');
-  args.push('--verbose');
-  args.push('--match');
-  args.push('.*-jasmine-unit\.');
-  args.push('--matchall');
-  args.push('--junitreport');
-  args.push('--output');
-  args.push(testReportsPath);
-  args.push(path.join(pwd, 'packages', 'jasmine-unit', 'lib'));
-  args.push(path.join(pwd, 'tests'));
+  args.push(nightwatchCli);
+  
+  //args.push(jasmineCli);
+  // args.push('--coffee');
+  // args.push('--color');
+  // args.push('--verbose');
+  // args.push('--match');
+  // args.push('.*-jasmine-unit\.');
+  // args.push('--matchall');
+  // args.push('--junitreport');
+  // args.push('--output');
+  // args.push(testReportsPath);
+  // args.push(path.join(pwd, 'packages', 'jasmine-unit', 'lib'));
+  // args.push(path.join(pwd, 'tests'));
 
 // How can we abstract this server-side so the test frameworks don't need to know about velocity collections
-  VelocityTestFiles.find({targetFramework: 'jasmine-unit'}).observe({
+  VelocityTestFiles.find({targetFramework: 'nightwatch'}).observe({
     added: rerunTests,
     changed: rerunTests,
     removed: rerunTests
@@ -68,7 +72,7 @@
       console.log(consoleData.trim());
       Meteor.call('postLog', {
         type: 'out',
-        framework: 'jasmine-unit',
+        framework: 'nightwatch',
         message: consoleData.trim()
       });
       consoleData = '';
@@ -86,7 +90,7 @@
           _.each(testsuite.testcase, function (testcase) {
             var result = ({
               name: testcase.$.name,
-              framework: 'jasmine-unit',
+              framework: 'nightwatch',
               result: testcase.failure ? 'failed' : 'passed',
               timestamp: testsuite.$.timestamp,
               time: testcase.$.time,
@@ -100,7 +104,7 @@
                 result.failureStackTrace = failure._;
               });
             }
-            result.id = 'jasmine-unit:' + hashCode(xmlFile + testcase.$.classname + testcase.$.name);
+            result.id = 'nightwatch:' + hashCode(xmlFile + testcase.$.classname + testcase.$.name);
             newResults.push(result.id);
             Meteor.call('postResult', result);
           });
@@ -108,24 +112,24 @@
       });
 
       if (index === xmlFiles.length - 1) {
-        Meteor.call('resetReports', {framework: 'jasmine-unit', notIn: newResults});
-        Meteor.call('completed', {framework: 'jasmine-unit'});
+        Meteor.call('resetReports', {framework: 'nightwatch', notIn: newResults});
+        Meteor.call('completed', {framework: 'nightwatch'});
       }
     });
   });  // end closeFunc
 
   function rerunTests () {
-    Meteor.call('resetLogs', {framework: 'jasmine-unit'});
+    Meteor.call('resetLogs', {framework: 'nightwatch'});
     rimraf.sync(testReportsPath);
 
     PackageStubber.stubPackages({
       outfile: path.join('tests', 'a1-package-stub.js')
     })
 
-    var jasmineNode = spawn(process.execPath, args);
-    jasmineNode.stdout.on('data', regurgitate);
-    jasmineNode.stderr.on('data', regurgitate);
-    jasmineNode.on('close', closeFunc);
+    var nightwatchNode = spawn(process.execPath, args);
+    nightwatchNode.stdout.on('data', regurgitate);
+    nightwatchNode.stderr.on('data', regurgitate);
+    nightwatchNode.on('close', closeFunc);
   }
 
 
