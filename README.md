@@ -96,6 +96,18 @@ terminal-b$ sudo ./run_nightwatch.sh
 terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
 ````
 
+####  Running Tests from With Velocity
+````sh
+# integrating selenium-nightwatch with velocity is very similar to running tests from the package
+# the only difference is that you want to use the velocity.json file
+# eventually, velocity will call the launch_nightwatch_from_velocity.sh command
+# until then, just run the command manually, and nightwatch will put its output files in a folder
+# where velocity can find them
+
+terminal-b$ cd packages/selenium-nightwatch
+terminal-b$ sudo ./launch_nightwatch_from_velocity.sh
+````
+
 
 ####  Writing More Complicated Acceptance Tests
 
@@ -173,6 +185,10 @@ With bigger test suites, you'll maybe want to set up an entire test database, in
 # launch your application against a test database
 terminal-a$ MONGO_URL=mongodb://127.0.0.1:27017 PORT=3000 node .meteor/local/build/main.js
 ````
+
+
+
+
 
 
 Licensing
