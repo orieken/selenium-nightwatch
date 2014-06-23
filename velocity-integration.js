@@ -1,6 +1,7 @@
 ;(function () {
 
   "use strict";
+  console.log('welcome to Nighwatch-Selenium...')
 
   if ('undefined' !== typeof Mirror && Mirror.isMirror) {
     // only run jasmine unit tests once, not for each mirror
@@ -18,7 +19,7 @@
       _ = Npm.require('lodash'),
       rimraf = Npm.require('rimraf'),
       //testReportsPath = path.join(pwd, 'tests', '.reports', 'jasmine-unit'),
-      testReportsPath = path.join(pwd, 'tests', '.reports', 'jasmine-unit'),
+      testReportsPath = path.join(pwd, 'tests', '.reports', 'nightwatch-acceptance'),
       args = [],
       consoleData = '',
       jasmineCli,
@@ -27,10 +28,10 @@
 
 // build OS-independent path to jasmine cli
   //jasmineCli = pwd + ',packages,jasmine-unit,.npm,package,node_modules,jasmine-node,lib,jasmine-node,cli.js'.split(',').join(path.sep);
-  nightwatchCli = pwd + '/run_nightwatch.sh';
+  var nightwatchCli = pwd + '/run_nightwatch.sh';
 
   args.push(nightwatchCli);
-  
+
   //args.push(jasmineCli);
   // args.push('--coffee');
   // args.push('--color');
@@ -44,13 +45,15 @@
   // args.push(path.join(pwd, 'packages', 'jasmine-unit', 'lib'));
   // args.push(path.join(pwd, 'tests'));
 
-// How can we abstract this server-side so the test frameworks don't need to know about velocity collections
-  VelocityTestFiles.find({targetFramework: 'nightwatch'}).observe({
-    added: rerunTests,
-    changed: rerunTests,
-    removed: rerunTests
-  });
+  // How can we abstract this server-side so the test frameworks don't need to know about velocity collections
+  // VelocityTestFiles.find({targetFramework: 'nightwatch'}).observe({
+  //   added: rerunTests,
+  //   changed: rerunTests,
+  //   removed: rerunTests
+  // });
 
+  //rerunTests();
+  parseOutputFiles();
   console.log(ANNOUNCE_STRING);
 
 
@@ -66,6 +69,7 @@
     }, 0);
   }
 
+  // possible memory leak
   var regurgitate = Meteor.bindEnvironment(function (data) {
     consoleData += data;
     if (consoleData.indexOf('\n') !== -1 && consoleData.trim()) {
@@ -79,58 +83,108 @@
     }
   });
 
-  closeFunc = Meteor.bindEnvironment(function () {
-    var newResults = [],
-        globSearchString = path.join('**', 'TEST-*.xml'),
-        xmlFiles = glob.sync(globSearchString, { cwd: testReportsPath });
+  // closeFunc = Meteor.bindEnvironment(function () {
+  //   var newResults = [],
+  //       globSearchString = path.join('**', 'FIREFOX-*.xml'),
+  //       xmlFiles = glob.sync(globSearchString, { cwd: testReportsPath });
+  //
+  //   _.each(xmlFiles, function (xmlFile, index) {
+  //     parseString(fs.readFileSync(testReportsPath + path.sep + xmlFile), function (err, result) {
+  //       _.each(result.testsuites.testsuite, function (testsuite) {
+  //         _.each(testsuite.testcase, function (testcase) {
+  //           var result = ({
+  //             name: testcase.$.name,
+  //             framework: 'nightwatch',
+  //             result: testcase.failure ? 'failed' : 'passed',
+  //             timestamp: testsuite.$.timestamp,
+  //             time: testcase.$.time,
+  //             ancestors: [testcase.$.classname]
+  //           });
+  //
+  //           if (testcase.failure) {
+  //             _.each(testcase.failure, function (failure) {
+  //               result.failureType = failure.$.type;
+  //               result.failureMessage = failure.$.message;
+  //               result.failureStackTrace = failure._;
+  //             });
+  //           }
+  //           result.id = 'nightwatch:' + hashCode(xmlFile + testcase.$.classname + testcase.$.name);
+  //           newResults.push(result.id);
+  //           Meteor.call('postResult', result);
+  //         });
+  //       });
+  //     });
+  //
+  //     if (index === xmlFiles.length - 1) {
+  //       Meteor.call('resetReports', {framework: 'nightwatch', notIn: newResults});
+  //       Meteor.call('completed', {framework: 'nightwatch'});
+  //     }
+  //   });
+  // });  // end closeFunc
 
-    _.each(xmlFiles, function (xmlFile, index) {
-      parseString(fs.readFileSync(testReportsPath + path.sep + xmlFile), function (err, result) {
-        _.each(result.testsuites.testsuite, function (testsuite) {
-          _.each(testsuite.testcase, function (testcase) {
-            var result = ({
-              name: testcase.$.name,
-              framework: 'nightwatch',
-              result: testcase.failure ? 'failed' : 'passed',
-              timestamp: testsuite.$.timestamp,
-              time: testcase.$.time,
-              ancestors: [testcase.$.classname]
-            });
+  function parseOutputFiles(){
+    console.log('parsing Nightwatch output files...');
+    //Meteor.bindEnvironment(function (data) {
+    //console.log('bound environment...');
+      var newResults = [],
+          globSearchString = path.join('**', 'FIREFOX_*.xml'),
+          xmlFiles = glob.sync(globSearchString, { cwd: testReportsPath });
 
-            if (testcase.failure) {
-              _.each(testcase.failure, function (failure) {
-                result.failureType = failure.$.type;
-                result.failureMessage = failure.$.message;
-                result.failureStackTrace = failure._;
+    console.log('globSearchString: ' + globSearchString);
+      console.log('testReportsPath: ' + testReportsPath);
+
+      console.log('iterating through files...');
+      _.each(xmlFiles, function (xmlFile, index) {
+        console.log('xmlfile ' + index + ": " + xmlFile);
+
+        parseString(fs.readFileSync(testReportsPath + path.sep + xmlFile), function (err, result) {
+          _.each(result.testsuites.testsuite, function (testsuite) {
+            _.each(testsuite.testcase, function (testcase) {
+              var result = ({
+                name: testcase.$.name,
+                framework: 'nightwatch',
+                result: testcase.failure ? 'failed' : 'passed',
+                timestamp: testsuite.$.timestamp,
+                time: testcase.$.time,
+                ancestors: [testcase.$.classname]
               });
-            }
-            result.id = 'nightwatch:' + hashCode(xmlFile + testcase.$.classname + testcase.$.name);
-            newResults.push(result.id);
-            Meteor.call('postResult', result);
+
+              if (testcase.failure) {
+                _.each(testcase.failure, function (failure) {
+                  result.failureType = failure.$.type;
+                  result.failureMessage = failure.$.message;
+                  result.failureStackTrace = failure._;
+                });
+              }
+              result.id = 'nightwatch:' + hashCode(xmlFile + testcase.$.classname + testcase.$.name);
+              newResults.push(result.id);
+              Meteor.call('postResult', result);
+            });
           });
         });
+
+        if (index === xmlFiles.length - 1) {
+          Meteor.call('resetReports', {framework: 'nightwatch', notIn: newResults});
+          Meteor.call('completed', {framework: 'nightwatch'});
+        }
       });
-
-      if (index === xmlFiles.length - 1) {
-        Meteor.call('resetReports', {framework: 'nightwatch', notIn: newResults});
-        Meteor.call('completed', {framework: 'nightwatch'});
-      }
-    });
-  });  // end closeFunc
-
-  function rerunTests () {
-    Meteor.call('resetLogs', {framework: 'nightwatch'});
-    rimraf.sync(testReportsPath);
-
-    PackageStubber.stubPackages({
-      outfile: path.join('tests', 'a1-package-stub.js')
-    })
-
-    var nightwatchNode = spawn(process.execPath, args);
-    nightwatchNode.stdout.on('data', regurgitate);
-    nightwatchNode.stderr.on('data', regurgitate);
-    nightwatchNode.on('close', closeFunc);
+    //});
   }
+
+
+  // function rerunTests () {
+  //   Meteor.call('resetLogs', {framework: 'nightwatch'});
+  //   rimraf.sync(testReportsPath);
+  //
+  //   // PackageStubber.stubPackages({
+  //   //   outfile: path.join('tests', 'a1-package-stub.js')
+  //   // })
+  //
+  //   var nightwatchNode = spawn(process.execPath, args);
+  //   nightwatchNode.stdout.on('data', regurgitate);
+  //   nightwatchNode.stderr.on('data', regurgitate);
+  //   nightwatchNode.on('close', closeFunc);
+  // }
 
 
 })();
