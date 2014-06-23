@@ -104,10 +104,7 @@ terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
 # until then, just run the command manually, and nightwatch will put its output files in a folder
 # where velocity can find them
 
-terminal-b$ cd packages/selenium-nightwatch
-terminal-b$ sudo ./launch_nightwatch_from_velocity.sh
-
-terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_velocity.sh run_velocity_nightwatch.sh
+terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_velocity.sh run_velocity_nightwatch.sh
 terminal-b$ sudo ./run_velocity_nightwatch.sh
 
 # you might want to do something clever like pass in arguments and run specific tests
