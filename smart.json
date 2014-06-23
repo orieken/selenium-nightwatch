@@ -3,6 +3,6 @@
     "description": "Dead-easy acceptance testing for your Meteor app with Selenium and Nightwatch.",
     "homepage": "https://github.com/awatson1978/selenium-nightwatch",
     "author": "Abigail Watson  (http://www.pentasyllabic.com)",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "git": "https://github.com/awatson1978/selenium-nightwatch.git"
 }
