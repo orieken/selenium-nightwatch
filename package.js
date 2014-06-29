@@ -14,7 +14,7 @@ Npm.depends({
 });
 
 Package.on_use(function (api) {
-    api.use(['velocity', 'mirror']);
-    api.use('package-stubber');
+    //api.use(['velocity', 'mirror']);
+    //api.use('package-stubber');
     api.add_files('velocity-integration.js', 'server');
 });
