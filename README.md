@@ -39,6 +39,21 @@ terminal-a$ cd myappdir
 terminal-a$ sudo mrt
 ````
 
+####  Setting up Nightwatch for your app
+We allow users to decide how to run the app for testing depending on the project they are working on.
+Currently users can runt nightwatch from their app root, from the package, or with velocity.
+
+````sh
+# Go to the root of your application
+Sites$ cd microscope
+
+# run the setup shell script
+microscope$ ./packages/selenium-nightwatch/setup.sh
+````
+Pick the appropriate menu option, nightwatch will be installed and a symlink will be created in the root of your application (the internal shell scripts that are run will vary depending on the option you chose).
+
+
+
 #### Write Your First Acceptance Test
 Check out this super simple syntax for writing acceptance tests.  All you need to do is copy the following code into a file in the ``/tests`` directory, and Nightwatch will parse it accordingly.
 
@@ -74,44 +89,16 @@ module.exports = {
 
 ````
 
-####  Running the Tests  
-You'll need to run Nightwatch for the first time with an actual test.  In this example, we'll be attaching to your app, but running a test against Google.  
+####  Running your above two tests
+Provided you use the symlink, this should be easy!
+
 ````sh
-# and then, in the same way that we run 'meteor mongo' in a separate terminal
-# while our application is already running,
-# we want to open up a new terminal, and run nightwatch
-terminal-b$ cd packages/selenium-nightwatch
-terminal-b$ sudo ./launch_nightwatch_from_package.sh
+# runing helloworld.js
+microscope$ ./run_nightwatch.sh -t tests/helloworld.js
+
+# runing google.js
+microscope$ ./run_nightwatch.sh -t tests/google.js
 ````
-
-####  Running Tests from App Root
-````sh
-# and then, in the same way that we run 'meteor mongo' in a separate terminal
-# while our application is already running,
-# we want to open up a new terminal, and run nightwatch
-terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_app_root.sh run_nightwatch.sh
-terminal-b$ sudo ./run_nightwatch.sh
-
-# you might want to do something clever like pass in arguments and run specific tests
-terminal-b$ sudo ./run_nightwatch.sh -t tests/leaderboard.js
-````
-
-####  Running Tests from With Velocity
-````sh
-# integrating selenium-nightwatch with velocity is very similar to running tests from the app root
-# the only difference is that you want to use the velocity.json file
-# eventually, velocity will call the launch_nightwatch_from_velocity.sh command
-# until then, just run the command manually, and nightwatch will put its output files in a folder
-# where velocity can find them
-
-terminal-b$ ln -s packages/selenium-nightwatch/launch_nightwatch_from_velocity.sh run_velocity_nightwatch.sh
-terminal-b$ sudo ./run_velocity_nightwatch.sh
-
-# you might want to do something clever like pass in arguments and run specific tests
-terminal-b$ sudo ./run_velocity_nightwatch.sh -t tests/leaderboard.js
-
-````
-
 
 ####  Writing More Complicated Acceptance Tests
 
