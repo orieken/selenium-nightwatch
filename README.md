@@ -4,7 +4,7 @@ selenium-nightwatch
 Dead-easy acceptance testing for your Meteor app with Selenium and Nightwatch.
 
 
-####  Requirements  
+####  Requirements
 
   - Meteor
   - Firefox
@@ -13,7 +13,7 @@ Dead-easy acceptance testing for your Meteor app with Selenium and Nightwatch.
 This package is 11mb large, because of the Selenium browser automation server, and will increase the overall size of your application by 11mb!  The good news, however, is that this extra weight won't be shipped down to the client, and is simply bloats the bundle file and adds an unnecessary file to the server.  We're working on providing this in a way that reduces that overhead as well.
 
 
-####  Installation  
+####  Installation
 Install Nightwatch and Selenium through Atmosphere or with the Git Clone command.
 
 ````sh
@@ -39,16 +39,15 @@ terminal-a$ cd myappdir
 terminal-a$ sudo mrt
 ````
 
-####  Setting up Nightwatch for your app
-We allow users to decide how to run the app for testing depending on the project they are working on.
-Currently users can runt nightwatch from their app root, from the package, or with velocity.
+####  Setting up Nightwatch for your App
+The ideal way to run Nightwatch is from the root directory of your application (although it's possible to also run Nightwatch from the package or from Velocity).
 
 ````sh
 # Go to the root of your application
-Sites$ cd microscope
+terminal-a$ cd myappdir
 
 # run the setup shell script
-microscope$ ./packages/selenium-nightwatch/setup.sh
+terminal-a$ ./packages/selenium-nightwatch/setup.sh
 ````
 Pick the appropriate menu option, nightwatch will be installed and a symlink will be created in the root of your application (the internal shell scripts that are run will vary depending on the option you chose).
 
@@ -94,10 +93,10 @@ Provided you use the symlink, this should be easy!
 
 ````sh
 # runing helloworld.js
-microscope$ ./run_nightwatch.sh -t tests/helloworld.js
+terminal-a$ ./run_nightwatch.sh -t tests/helloworld.js
 
 # runing google.js
-microscope$ ./run_nightwatch.sh -t tests/google.js
+terminal-a$ ./run_nightwatch.sh -t tests/google.js
 ````
 
 ####  Writing More Complicated Acceptance Tests

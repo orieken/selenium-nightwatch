@@ -4,7 +4,11 @@
     "homepage": "https://github.com/awatson1978/selenium-nightwatch",
     "author": "Abigail Watson  (http://www.pentasyllabic.com)",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "version": "0.3.1",
+=======
+    "version": "0.3.2",
+>>>>>>> setup-script
 =======
     "version": "0.3.2",
 >>>>>>> setup-script
