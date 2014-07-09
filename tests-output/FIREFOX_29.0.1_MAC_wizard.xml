@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="wizard"
+             errors="0"
+             failures="0"
+             tests="159">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Campaigns Wizard" package="wizard" skipped="0"
+    tests="159" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;#entrySignInPage&gt; was visible after 265 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#emailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#passwordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entrySignInButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#introPage&gt; was visible after 19 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#createCampaignTile&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#createCampaignTileIcon&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#createCampaignTileTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#createCampaignTileRule&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#createCampaignTileText&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignWizard&gt; was visible after 24 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#fuelux-wizard&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardSteps&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStep1&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStep2&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStep3&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStep4&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel1&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel2&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel3&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel4&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel1&gt; contains text: &quot;New Campaign&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel2&gt; contains text: &quot;Add Digital Content&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel3&gt; contains text: &quot;Publish&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepLabel4&gt; contains text: &quot;Generate Onramps&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardTopRule&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignContainer&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignWizardForm&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignNameLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignNameInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardCampaignDescriptionLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardCampaignDescriptionInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignNameLabel&gt; contains text: &quot;Campaign Name&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardCampaignDescriptionLabel&gt; contains text: &quot;Description&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientLabel&gt; contains text: &quot;Client&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardBottomRule&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepOneNextButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; contains text: &quot;Test Campaign - Wizard - 5571&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#clientSearchModalTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#clientSearchModalInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#clientSearchModalResults&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#modalOkButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientButton&gt; contains text: &quot;ACME, Inc.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newContentContainer&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newContentSectionTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newContentSectionMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentRedirectLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentRedirectInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentStaticLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentStaticInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentProtocolLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentProtocolInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentUrlInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentNameLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentNameInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentDescriptionLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentDescriptionInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; contains text: &quot;Test Campaign - Wizard - 5571&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentProtocolLabel&gt; contains text: &quot;Redirect URL&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentNameLabel&gt; contains text: &quot;Name&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentDescriptionLabel&gt; contains text: &quot;Description&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentUrlInput&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentNameInput&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentDescriptionInput&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardBottomRule&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentPreviewButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardStepTwoNextButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#publishCampaignContainer&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignClient&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignContentUrl&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignMappedUrl&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#urlPublishedIcon&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardPublishButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardHomeButton&gt; is not present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#stepFourButton&gt; is not present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; contains text: &quot;Test Campaign - Wizard - 5571&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignClient&gt; contains text: &quot;ACME, Inc.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignContentUrl&gt; contains text: &quot;www.wikipedia.org&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignMappedUrl&gt; contains text: &quot;http://tap.thinaire.net/&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#urlPublishedIcon&gt; has css class: &quot;fa-chain-broken&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#urlPublishedIcon&gt; does not have css class: &quot;fa-check-circle&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#urlPublishedIcon&gt; does not have css class: &quot;green&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#urlPublishedIcon&gt; has css class: &quot;fa-check-circle&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#urlPublishedIcon&gt; does not have css class: &quot;fa-chain-broken&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#urlPublishedIcon&gt; has css class: &quot;success&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignMappedUrl&gt; has css class: &quot;green&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardPublishButton&gt; is not present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#wizardHomeButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#stepFourButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#addOnrampsContainer&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#addOnrampsSubtitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#addOnrampsMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#addOnrampsLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#numToGen&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#addOnrampsFooterRule&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#skipGeneration&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#addAndGenerate&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignContentTag&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignTitle&gt; contains text: &quot;Test Campaign - Wizard - 5571&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsListPage&gt; was visible after 18 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsListPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsListPageTitle&gt; contains text: &quot;Campaigns&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.searchColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsSearchInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsSearchInput&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.newRecordColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignButton&gt; contains text: &quot;NEW CAMPAIGN&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStarColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableNameColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableInteractionsColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableClientColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableOwnerColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableCreatedColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableViewColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableModifyColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStatusColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStarColumn&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableNameColumn&gt; contains text: &quot;Campaign Name&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableInteractionsColumn&gt; contains text: &quot;Interactions&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableClientColumn&gt; contains text: &quot;Client&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableOwnerColumn&gt; contains text: &quot;Owner&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableCreatedColumn&gt; contains text: &quot;Created&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsTableViewColumn&gt; was present after 8 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableViewColumn .tablesorter-header-inner&gt; contains text: &quot;View&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsTableModifyColumn&gt; was present after 8 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableModifyColumn .tablesorter-header-inner&gt; contains text: &quot;Modify&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsTableStatusColumn&gt; was present after 11 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStatusColumn .tablesorter-header-inner&gt; contains text: &quot;Status&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableViewColumn&gt; has css class: &quot;centered&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableModifyColumn&gt; has css class: &quot;centered&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStatusColumn&gt; has css class: &quot;centered&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable .tablerow td:nth-child(2)&gt; contains text: &quot;Test Campaign - Wizard - 5571&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable .tablerow td:nth-child(3)&gt; contains text: &quot;0&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable .tablerow td:nth-child(4)&gt; contains text: &quot;ACME, Inc.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable .tablerow td:nth-child(5)&gt; contains text: &quot;System Administrator&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable .tablerow td:nth-child(6)&gt; contains text: &quot;2014&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsEditPage&gt; was visible after 24 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignName&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignName&gt; contains text: &quot;Test Campaign - Wizard - 5571&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#campaignNameInput&gt; equals &quot;Test Campaign - Wizard - 5571&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientButton&gt; contains text: &quot;ACME, Inc.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#findCampaignOwnerButton&gt; equals &quot;System Administrator&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#saveCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#deleteCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#saveCampaignButton&gt; has css class: &quot;btn-info&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#deleteCampaignButton&gt; has css class: &quot;btn-danger&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#deleteCampaignModal&gt; was visible after 542 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#confirmDeleteCampaignMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#confirmDeleteCampaignInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#confirmDeleteCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsListPage&gt; was visible after 47 milliseconds.">
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#noContentsMessage&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+Unable to locate element: &quot;#noContentsMessageImg&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="campaigns"
+             errors="0"
+             failures="0"
+             tests="133">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Campaigns Workflow" package="campaigns" skipped="0"
+    tests="133" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;#entrySignInPage&gt; was visible after 284 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#emailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#passwordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entrySignInButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#sidebarTemplate&gt; was visible after 33 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#sidebarNav&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#sidebarMenu&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#sidebarMenuCampaignsItem&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#sidebarMenuCampaignsLink&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsListPage&gt; was visible after 45 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsListPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsListPageTitle&gt; contains text: &quot;Campaigns&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#noCampaignsMessagePage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#noCampaignsMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#noCampaignsMessage&gt; contains text: &quot;You haven&#39;t created any campaigns yet!&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignButton&gt; contains text: &quot;NEW CAMPAIGN&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute src of &lt;#noCampaignsMessageImg&gt; equals &quot;http://localhost:3000/img/clouds/clouds_multi_bw.png&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsEditPage&gt; was visible after 21 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignName&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignName&gt; contains text: &quot;New Campaign&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignIdLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignIdLabel&gt; contains text: &quot;Campaign Id:&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignIdText&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignIdText&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignNameLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignNameLabel&gt; contains text: &quot;Name&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignNameInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#campaignNameInput&gt; equals &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignClientLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignClientLabel&gt; contains text: &quot;Client&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientButton&gt; contains text: &quot;Thinaire&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignOwnerLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignOwnerLabel&gt; contains text: &quot;Owner&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignOwnerButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#findCampaignOwnerButton&gt; equals &quot;System Administrator&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignDescriptionLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignDescriptionLabel&gt; contains text: &quot;Description&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignDescriptionInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#campaignDescriptionInput&gt; equals &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#metaHorizontalRule&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dateHorizontalRule&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#startDatePickerLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#startDatePickerLabel&gt; contains text: &quot;Start Date&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#startDatePicker&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#endDatePickerLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#endDatePickerLabel&gt; contains text: &quot;End Date&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#endDatePicker&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#saveCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsListPage&gt; was visible after 44 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsListPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsListPageTitle&gt; contains text: &quot;Campaigns&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.searchColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsSearchInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsSearchInput&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.newRecordColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newCampaignButton&gt; contains text: &quot;NEW CAMPAIGN&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStarColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableNameColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableInteractionsColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableClientColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableOwnerColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableCreatedColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableViewColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableModifyColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStatusColumn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStarColumn&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableNameColumn&gt; contains text: &quot;Campaign Name&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableInteractionsColumn&gt; contains text: &quot;Interactions&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableClientColumn&gt; contains text: &quot;Client&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableOwnerColumn&gt; contains text: &quot;Owner&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableCreatedColumn&gt; contains text: &quot;Created&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsTableViewColumn&gt; was present after 11 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableViewColumn .tablesorter-header-inner&gt; contains text: &quot;View&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsTableModifyColumn&gt; was present after 12 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableModifyColumn .tablesorter-header-inner&gt; contains text: &quot;Modify&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsTableStatusColumn&gt; was present after 11 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStatusColumn .tablesorter-header-inner&gt; contains text: &quot;Status&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableViewColumn&gt; has css class: &quot;centered&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableModifyColumn&gt; has css class: &quot;centered&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTableStatusColumn&gt; has css class: &quot;centered&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable tr td:nth-child(2)&gt; contains text: &quot;Test Campaign - 7119&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable tr td:nth-child(3)&gt; contains text: &quot;0&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable tr td:nth-child(4)&gt; contains text: &quot;Thinaire&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable tr td:nth-child(5)&gt; contains text: &quot;System Administrator&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignsTable tr td:nth-child(6)&gt; contains text: &quot;2014&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsRecordPage&gt; was visible after 242 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignName&gt; contains text: &quot;Test Campaign - 7119&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignTotalInteractions&gt; contains text: &quot;Total Interactions:&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignTotalInteractions&gt; contains text: &quot;0&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignStatsAdminControls&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#datepickerwidget&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#printCampaignReportButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#exportCsvDataButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#editCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dailyInteractionsSectionTitle&gt; contains text: &quot;Total Interactions By Day&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dailyInteractionsLineChartPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dailyInteractionsLineChart&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dailyInteractionsLineChartCanvas&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOsSectionTitle&gt; contains text: &quot;Total Interactions by Operating System&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOsPieChartPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOsPieChart&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOsPieChartCanvas&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#hourlyInteractionsSectionTitle&gt; contains text: &quot;Total Interactions By Hour&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#hourlyInteractionsBarChartPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#hourlyInteractionsBarChart&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#hourlyInteractionsBarChartCanvas&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dayOfWeekInteractionsSectionTitle&gt; contains text: &quot;Total Interactions By Day of Week&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dayOfWeekInteractionsBarPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dayOfWeekInteractionsBarChart&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#dayOfWeekInteractionsBarChartCanvas&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOnRampSectionTitlel&gt; contains text: &quot;Total Interactions by On-Ramp&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOnRampPieChartPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOnRampPieChart&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#interactionsByOnRampPieChartCanvas&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsEditPage&gt; was visible after 39 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignName&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#campaignName&gt; contains text: &quot;Test Campaign - 7119&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#campaignNameInput&gt; equals &quot;Test Campaign - 7119&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#findCampaignClientButton&gt; contains text: &quot;Thinaire&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#findCampaignOwnerButton&gt; equals &quot;System Administrator&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#saveCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#deleteCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#saveCampaignButton&gt; has css class: &quot;btn-info&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#deleteCampaignButton&gt; has css class: &quot;btn-danger&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#deleteCampaignModal&gt; was visible after 534 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#confirmDeleteCampaignMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#confirmDeleteCampaignInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#confirmDeleteCampaignButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#campaignsListPage&gt; was visible after 24 milliseconds.">
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#noContentsMessage&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+Unable to locate element: &quot;#noContentsMessageImg&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

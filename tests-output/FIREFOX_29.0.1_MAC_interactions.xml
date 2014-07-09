@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="interactions"
+             errors="0"
+             failures="0"
+             tests="4">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Interactions Monitoring" package="interactions" skipped="0"
+    tests="4" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;#entrySignInPage&gt; was visible after 354 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#emailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#passwordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entrySignInButton&gt; is present.">
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#noContentsMessage&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+Unable to locate element: &quot;#noContentsMessageImg&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

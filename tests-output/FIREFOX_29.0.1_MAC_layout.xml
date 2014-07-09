@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="layout"
+             errors="0"
+             failures="0"
+             tests="6">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="App Layout" package="layout" skipped="0"
+    tests="6" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 254 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#westPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#eastPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#mainPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#navbarHeader&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#mainPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#noContentsMessage&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+Unable to locate element: &quot;#noContentsMessageImg&quot; using: css selector
+Unable to locate element: &quot;#newContentButton&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>
